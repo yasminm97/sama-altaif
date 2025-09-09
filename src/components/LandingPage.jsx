@@ -177,51 +177,6 @@ export default function LandingPage() {
               alt="partner1"
               className="h-20 w-auto object-contain"
             />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner2"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner1"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner2"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner1"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner2"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner3"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner4"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner3"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner4"
-              className="h-20 w-auto object-contain"
-            />
           </div>
         </div>
       </section>
