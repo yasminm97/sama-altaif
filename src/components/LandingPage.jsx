@@ -1,5 +1,15 @@
 import logo from "../assets/logo/logo.png";
+import logo1 from "../assets/logo/logo1.png";
+import partner1 from "../assets/partners/partner1.svg";
+import partner2 from "../assets/partners/partner2.png";
+import drugs from "../assets/imgs/drugs.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMicroscope,
+  faLeaf,
+  faIndustry,
+} from "@fortawesome/free-solid-svg-icons";
 
 const products = [
   {
@@ -31,36 +41,30 @@ export default function LandingPage() {
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-600 to-teal-400 flex items-center justify-center text-white font-bold">
-              <img src={logo} />
+            <div className="w-10 h-10 rounded-lg  flex items-center justify-center">
+              <img src={logo1} />
             </div>
             <div>
               <h1 className="text-lg font-semibold">
                 Sama Al-Taif —{" "}
                 <span className="font-normal">
-                  Laboratory-grade supplements
+                  Global pharmaceutical expertise
                 </span>
               </h1>
               <p className="text-xs text-gray-500">
-                Clinically supported • Third-party tested
+                Scientafic Burea • Third-party tested
               </p>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a className="hover:text-teal-600" href="#products">
-              Products
-            </a>
             <a className="hover:text-teal-600" href="#benefits">
               Why Sama Al-Taif
             </a>
-            <a className="hover:text-teal-600" href="#faq">
-              FAQ
-            </a>
             <a
               className="px-4 py-2 border rounded-md text-sm bg-gradient-to-r from-teal-500 to-blue-500 text-white hover:opacity-95"
-              href="#buy"
+              href="#contact"
             >
-              Shop Now
+              Contact Us
             </a>
           </nav>
         </div>
@@ -70,22 +74,25 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <p className="text-sm text-teal-600 font-semibold">
-              Laboratory-grade supplements
+              Global pharmaceutical expertise
             </p>
             <h2 className="mt-4 text-3xl md:text-4xl font-extrabold leading-tight">
-              Clinically-formulated vitamins & supplements you can trust
+              Your Trusted Partner in Advancing Healthcare in Iraq
             </h2>
             <p className="mt-4 text-gray-600">
-              Transparent sourcing. Third-party testing. Potent, pure
-              ingredients with evidence-backed dosages — made in GMP facilities.
+              At Sama’a Al Teif, we are more than a scientific bureau — we are a
+              trusted bridge between global pharmaceutical innovation and the
+              Iraqi healthcare market. We deliver world-class medicines and
+              medical supplies that empower healthcare professionals and improve
+              patient outcomes.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a
-                href="#buy"
+                href="#partners"
                 className="inline-flex items-center justify-center px-5 py-3 rounded-md bg-teal-600 text-white font-medium"
               >
-                Shop Bestsellers
+                Our Partners
               </a>
               <a
                 href="#benefits"
@@ -97,26 +104,26 @@ export default function LandingPage() {
 
             <div className="mt-8 flex items-center gap-6">
               <div className="flex items-center gap-3">
-                <img
-                  alt="lab badge"
-                  src={logo}
-                  className="w-14 h-14 rounded-md"
+                <FontAwesomeIcon
+                  icon={faMicroscope}
+                  className="text-2xl text-teal-600"
                 />
-                <div>
-                  <div className="text-sm font-semibold">
-                    Third‑party tested
-                  </div>
-                  <div className="text-xs text-gray-500">
-                    Certificate available on request
+                <div className="flex items-center gap-3">
+                  <div>
+                    <div className="text-sm font-semibold">
+                      Third-party tested
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      Certificate available on request
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <img
-                  alt="non-gmo"
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FvuzJ1qO3GHurt0jULVZFHj3Ky37x3ET7w&s"
-                  className="w-14 h-14 rounded-md"
+                <FontAwesomeIcon
+                  icon={faIndustry}
+                  className="text-2xl text-teal-600"
                 />
                 <div>
                   <div className="text-sm font-semibold">GMP Certified</div>
@@ -132,25 +139,22 @@ export default function LandingPage() {
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img
                 alt="featured product"
-                src="https://scitechdaily.com/images/Omega-3-Fish-Oil-Supplement.jpg"
+                src={drugs}
                 className="w-full h-80 object-cover"
               />
             </div>
             <div className="absolute -bottom-6 left-6 bg-white p-4 rounded-xl shadow-lg w-64">
               <div className="flex items-center gap-4">
                 <img
-                  src="https://scitechdaily.com/images/Omega-3-Fish-Oil-Supplement.jpg"
-                  alt="prod"
-                  className="w-16 h-16 rounded-md object-cover"
+                  src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png"
+                  alt="trust"
+                  className="w-16 h-16 rounded-md object-contain"
                 />
                 <div>
                   <div className="text-sm font-semibold">
-                    Omega+ Pure Fish Oil
+                    Trusted by Healthcare Providers
                   </div>
-                  <div className="text-xs text-gray-500">
-                    EPA & DHA — 1000mg
-                  </div>
-                  <div className="mt-2 font-bold">$29.00</div>
+                  <div className="text-xs text-gray-500">Since 2010</div>
                 </div>
               </div>
             </div>
@@ -159,65 +163,38 @@ export default function LandingPage() {
       </section>
 
       {/* TRUST ROW */}
-      <section className="max-w-7xl mx-auto px-6 py-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-white rounded-lg p-6 shadow-sm">
-          <div className="flex items-center justify-center gap-6">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner1"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner2"
-              className="h-20 w-auto object-contain"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png"
-              alt="partner1"
-              className="h-20 w-auto object-contain"
-            />
+      <section id="partners" className="py-12 mt-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Our Partners</h2>
+          <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex-1 bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+              <a href="https://topivac.com/en/">
+                <img
+                  src={partner1}
+                  alt="Topivac"
+                  className="h-24 w-auto mb-4 object-contain"
+                />
+              </a>
+              {/* <h3 className="text-xl font-semibold mb-2">Topivac</h3>
+              <p className="text-gray-600">
+                A short description about Topivac, what they do, why partnership
+                matters…
+              </p> */}
+            </div>
+            <div className="flex-1 bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+              <a href="https://cosmoactive.com/">
+                <img
+                  src={partner2}
+                  alt="Cosmoactive"
+                  className="h-24 w-auto mb-4 object-contain"
+                />
+              </a>
+              {/* <h3 className="text-xl font-semibold mb-2">Cosmoactive</h3>
+              <p className="text-gray-600">
+                A short description about Cosmoactive, what they bring, etc.
+              </p> */}
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* PRODUCTS */}
-      <section id="products" className="max-w-7xl mx-auto px-6 py-12">
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="text-2xl font-bold">Best Sellers</h3>
-          <a className="text-sm text-teal-600" href="#">
-            View all products
-          </a>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((p) => (
-            <article
-              key={p.id}
-              className="bg-white rounded-xl shadow-sm overflow-hidden"
-            >
-              <img
-                src={p.img}
-                alt={p.title}
-                className="w-full h-44 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="font-semibold">{p.title}</h4>
-                <p className="text-sm text-gray-500">{p.subtitle}</p>
-                <div className="mt-4 flex items-center justify-between">
-                  <div className="font-bold">{p.price}</div>
-                  <div className="flex gap-2">
-                    <button className="px-3 py-1 rounded-md border text-sm">
-                      Details
-                    </button>
-                    <button className="px-3 py-1 rounded-md bg-teal-600 text-white text-sm">
-                      Add
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </article>
-          ))}
         </div>
       </section>
 
@@ -225,101 +202,96 @@ export default function LandingPage() {
       <section id="benefits" className="bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="text-2xl font-bold">Why choose Sama Al-Taif?</h3>
+            <h3 className="text-2xl font-bold">About us</h3>
             <ul className="mt-6 space-y-4 text-gray-600">
               <li className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-md bg-teal-50 flex items-center justify-center font-semibold">
-                  1
-                </div>
                 <div>
-                  <div className="font-semibold">
-                    Clinically effective dosages
-                  </div>
-                  <div className="text-sm">
-                    We use evidence-backed ingredient levels in our formulas.
-                  </div>
-                </div>
-              </li>
-
-              <li className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-md bg-teal-50 flex items-center justify-center font-semibold">
-                  2
-                </div>
-                <div>
-                  <div className="font-semibold">Transparent sourcing</div>
-                  <div className="text-sm">
-                    Raw materials and COAs are available upon request.
-                  </div>
-                </div>
-              </li>
-
-              <li className="flex gap-4 items-start">
-                <div className="w-7 h-7 rounded-md bg-teal-50 flex items-center justify-center font-semibold">
-                  3
-                </div>
-                <div>
-                  <div className="font-semibold">
-                    Pure formulas — no fillers
-                  </div>
-                  <div className="text-sm">
-                    We avoid unnecessary additives and allergens.
+                  <div className="font-medium">
+                    Sama’a Al Teif Scientific Bureau is a fully licensed
+                    scientific office based in Baghdad, Iraq, specializing in
+                    the registration, promotion, and distribution of
+                    pharmaceutical products and medical supplies. Founded with a
+                    vision to raise the standard of healthcare services, we
+                    partner with international pharmaceutical and medical device
+                    companies to ensure safe, effective, and innovative products
+                    reach the right hands. Our dedicated team of professionals,
+                    including pharmacists, medical representatives, and
+                    regulatory experts, works closely with healthcare providers
+                    across Iraq to support clinical excellence and patient
+                    safety.
                   </div>
                 </div>
               </li>
             </ul>
           </div>
 
-          <div>
+          <div className="flex justify-center text-center items-center">
             <div className="rounded-xl overflow-hidden shadow-lg">
-              <img
-                src={logo}
-                alt="lab"
-                className="w-full h-full object-cover"
-              />
+              <img src={logo} alt="lab" className="w-64 h-64 object-cover" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ + CTA */}
+      {/* services */}
       <section id="faq" className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h3 className="text-2xl font-bold">Frequently asked questions</h3>
+            <h3 className="text-2xl font-bold">Our Services</h3>
             <div className="mt-6 space-y-3">
               <details className="bg-white rounded-md p-4 shadow-sm">
                 <summary className="font-semibold cursor-pointer">
-                  Are your supplements third-party tested?
+                  Pharmaceutical Promotion
                 </summary>
                 <div className="mt-2 text-sm text-gray-600">
-                  Yes — we test finished products and raw materials through
-                  accredited labs. Certificates are available on request.
+                  Ethical, evidence-based promotion of medicines to physicians,
+                  pharmacists, and healthcare institutions.
+                </div>
+              </details>
+              <details className="bg-white rounded-md p-4 shadow-sm">
+                <summary className="font-semibold cursor-pointer">
+                  Medical Supplies Distribution
+                </summary>
+                <div className="mt-2 text-sm text-gray-600">
+                  Delivering high-quality, certified medical devices and
+                  consumables to hospitals and clinics.
                 </div>
               </details>
 
               <details className="bg-white rounded-md p-4 shadow-sm">
                 <summary className="font-semibold cursor-pointer">
-                  Do you ship internationally?
+                  Regulatory Affairs & Product Registration
                 </summary>
                 <div className="mt-2 text-sm text-gray-600">
-                  We ship to many countries — shipping options and rates are
-                  shown at checkout.
+                  Expertise in navigating Iraqi Ministry of Health requirements
+                  to ensure smooth and timely product registration.
                 </div>
               </details>
-
               <details className="bg-white rounded-md p-4 shadow-sm">
                 <summary className="font-semibold cursor-pointer">
-                  What is your return policy?
+                  Market Research & Access Strategy
                 </summary>
                 <div className="mt-2 text-sm text-gray-600">
-                  30-day money-back guarantee for unopened or lightly used
-                  products. See policy page for details.
+                  Providing data-driven insights and market strategies to
+                  international partners seeking to expand in Iraq.
+                </div>
+              </details>
+              <details className="bg-white rounded-md p-4 shadow-sm">
+                <summary className="font-semibold cursor-pointer">
+                  Scientific Support & Training
+                </summary>
+                <div className="mt-2 text-sm text-gray-600">
+                  Organizing medical education programs, workshops, and
+                  conferences to keep healthcare professionals updated.
                 </div>
               </details>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-teal-600 to-blue-600 text-white rounded-xl p-8 flex flex-col justify-center">
+          <div
+            id="contact"
+            className="bg-gradient-to-r from-teal-600 to-blue-600 text-white rounded-xl p-8 flex flex-col justify-center"
+          >
             <h4 className="text-2xl font-bold">Contact Us</h4>
             <form className="mt-4 flex flex-col gap-2">
               <input
@@ -346,9 +318,14 @@ export default function LandingPage() {
           <div className="flex flex-col space-y-4">
             <img src={logo} className="h-20 w-20 rounded-lg" />
             <div className="font-bold text-lg">Sama Al-Taif</div>
-            <p className="text-sm text-gray-600 mt-2">
-              Location: Karrada – Al Wahda / Locality 904, Alley 28, House 13,
-              Baghdad, Iraq
+            <p className="text-sm text-gray-600 mt-1">
+              Location: Palestine Street, Baghdad, Iraq,
+            </p>
+            <p className="text-sm text-gray-600 mt-1">
+              Phone: +964 780 513 7650 - +971 50 153 4077
+            </p>
+            <p className="text-sm text-gray-600 mt-1">
+              Email: info@samaalteif.com
             </p>
             <div className="flex gap-4 mt-2">
               <a
