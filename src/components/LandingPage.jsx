@@ -355,7 +355,7 @@ export default function LandingPage() {
           {/* Map Section */}
           <div className="col-span-1 md:col-span-2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.6012338175423!2d44.40672861500288!3d33.31920778083221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x155752a2f64d25bb%3A0x50e2d5a0c6b3e4f0!2sBaghdad%2C%20Iraq!5e0!3m2!1sen!2sus!4v1694262800000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.065143828244!2d44.4010664756468!3d33.36936527342173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15578252c1952caf%3A0x718f9e2e2ec6a0ba!2sFalastin%20St%2C%20Baghdad%2C%20Baghdad%20Governorate%2C%20Iraq!5e0!3m2!1sen!2sus!4v1759270201067!5m2!1sen!2sus"
               width="100%"
               height="250"
               style={{ border: 0 }}
